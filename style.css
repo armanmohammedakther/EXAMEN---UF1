@@ -1,0 +1,288 @@
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.nav {
+    border-bottom: 2px solid #000;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    padding: 10px;
+    gap: 1em;
+    top: 0;
+}
+
+.item-6:hover {
+    color: red;
+}
+
+.item-7:hover {
+    color: red;
+}
+
+.item-8:hover {
+    color: red;
+}
+
+.item-9:hover {
+    color: red;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 200px 200px auto 200px;
+    grid-template-rows: 100px auto auto 200px 100px;
+    grid-template-areas:
+        'TITOL TITOL TITOL TITOL'
+        'ELEMENT4 ELEMENT4 ELEMENT1 ELEMENT1'
+        'ELEMENT4 ELEMENT4 ELEMENT2 ELEMENT3'
+        'ELEMENT4 ELEMENT4 ELEMENT2 ELEMENT3'
+        'ELEMENT5 ELEMENT5 ELEMENT5 ELEMENT5';
+    justify-items: center;
+    gap: 1em;
+}
+
+.item-10 {
+    justify-self: start;
+    grid-area: TITOL;
+}
+
+.item-4 {
+    display: flex;
+    justify-content: center;
+    grid-area: ELEMENT4;
+    background-color: yellow;
+    width: 100%;
+}
+
+.item-4 h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.item-4 img {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.item-4 a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.item-1 {
+    width: 100%;
+    grid-area: ELEMENT1;
+    background-color: yellow;
+}
+
+.item-1 h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.item-1 p {
+    text-align: center;
+}
+
+.item-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    grid-area: ELEMENT2;
+    background-color: yellow;
+}
+
+.item-3 {
+    width: 100%;
+    grid-area: ELEMENT3;
+    background-color: yellow;
+}
+
+.item-3 h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.item-3 p {
+    text-align: center;
+}
+
+.item-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    grid-area: ELEMENT5;
+    background-color: yellow;
+}
+
+.container2 img {
+    position: static;
+    width: 100%;
+    height: 100%;
+}
+
+.container2 h1 {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    position: relative;
+    color: white;
+    z-index: 1;
+    font-size: 3em;
+    top: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    background-color: black;
+    color: white;
+}
+
+.item-30,
+.item-31 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+    body {
+        width: 100%;
+    }
+
+    .item-7,
+    .item-8 {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: black;
+    }
+
+    .container {
+        width: 99%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            'TITOL TITOL'
+            'ELEMENT1 ELEMENT1'
+            'ELEMENT4 ELEMENT4'
+            'ELEMENT2 ELEMENT5'
+            'ELEMENT3 ELEMENT3';
+        justify-items: center;
+        gap: 0px;
+    }
+
+    .item-10 {
+        justify-self: start;
+        grid-area: TITOL;
+    }
+
+    .item-4 {
+        display: flex;
+        justify-content: center;
+        grid-area: ELEMENT4;
+        background-color: yellow;
+    }
+
+    .item-4 h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .item-4 img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .item-4 a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .item-1 {
+        width: 100%;
+        grid-area: ELEMENT1;
+        background-color: blueviolet;
+    }
+
+    .item-1 h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .item-1 p {
+        text-align: center;
+    }
+
+    .item-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        grid-area: ELEMENT2;
+        background-color: green;
+    }
+
+    .item-3 {
+        width: 100%;
+        grid-area: ELEMENT3;
+        background-color: grey;
+    }
+
+    .item-3 h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .item-3 p {
+        text-align: center;
+    }
+
+    .item-5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        grid-area: ELEMENT5;
+        background-color: purple;
+    }
+
+    .container2 h1 {
+        top: 80px;
+        font-size: 2em;
+    }
+
+    .container2 img {
+        position: static;
+        width: 99%;
+        height: auto;
+    }
+
+    .footer {
+        width: 99%;
+    }
+}
